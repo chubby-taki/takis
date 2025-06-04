@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品ギャラリー - takis リアルペット刺繍オーダー</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>takis</h1>
+                <span>リアルペット刺繍</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html" class="active">作品ギャラリー</a></li>
+                    <li><a href="services.html">サービス案内</a></li>
+                    <li><a href="pricing.html">料金</a></li>
+                    <li><a href="process.html">オーダーの流れ</a></li>
+                    <li><a href="testimonials.html">お客様の声</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-primary">無料相談</a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>作品ギャラリー</h1>
+                <p>takisが手がけたリアルペット刺繍作品をご覧ください</p>
+            </div>
+        </section>
+
+        <!-- フィルター -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-group">
+                    <h3>動物種別</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">全て</button>
+                        <button class="filter-btn" data-filter="dog">犬</button>
+                        <button class="filter-btn" data-filter="cat">猫</button>
+                        <button class="filter-btn" data-filter="bird">鳥</button>
+                        <button class="filter-btn" data-filter="rabbit">うさぎ</button>
+                        <button class="filter-btn" data-filter="other">その他</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <h3>仕上げ方法</h3>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all-finish">全て</button>
+                        <button class="filter-btn" data-filter="hoop">フープ仕上げ</button>
+                        <button class="filter-btn" data-filter="frame">額装仕上げ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ギャラリー -->
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-animal="dog" data-finish="frame">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🐕</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>柴犬・額装仕上げ</h3>
+                            <p class="gallery-category">Sサイズ</p>
+                            <p class="gallery-description">リアルな毛質の表現にこだわった作品です。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="cat" data-finish="hoop">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🐱</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ペルシャ猫・フープ仕上げ</h3>
+                            <p class="gallery-category">まる</p>
+                            <p class="gallery-description">長毛種の優雅な印象を丁寧に刺繍しました。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="bird" data-finish="frame">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🦜</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>セキセイインコ・額装仕上げ</h3>
+                            <p class="gallery-category">Sサイズ</p>
+                            <p class="gallery-description">カラフルな羽根の色合いを美しく再現。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="rabbit" data-finish="hoop">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🐰</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ネザーランドドワーフ・フープ仕上げ</h3>
+                            <p class="gallery-category">まる</p>
+                            <p class="gallery-description">愛らしい表情と丸い目が印象的な作品。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="other" data-finish="frame">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🦔</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>フェレット・額装仕上げ</h3>
+                            <p class="gallery-category">Sサイズ</p>
+                            <p class="gallery-description">細やかな毛色の変化を表現しました。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="cat" data-finish="hoop">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🐈</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>三毛猫・フープ仕上げ</h3>
+                            <p class="gallery-category">まる</p>
+                            <p class="gallery-description">三色の毛色の境界を自然に表現。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="other" data-finish="frame">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🐹</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>ハムスター・額装仕上げ</h3>
+                            <p class="gallery-category">Sサイズ</p>
+                            <p class="gallery-description">小さくても愛らしい表情をリアルに。</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-animal="dog" data-finish="frame">
+                        <div class="gallery-image">
+                            <div class="image-placeholder">🐕‍🦺</div>
+                        </div>
+                        <div class="gallery-info">
+                            <h3>犬2匹・額装仕上げ</h3>
+                            <p class="gallery-category">Mサイズ</p>
+                            <p class="gallery-description">仲良し2匹の絆を一枚の作品に込めて。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>あなたのペットも刺繍作品に</h2>
+                <p>世界に一つだけの特別な作品を作りませんか？</p>
+                <a href="contact.html" class="btn-primary">無料相談を始める</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>takis</h3>
+                        <p>リアルペット刺繍</p>
+                        <p class="tagline">一針一針に心を込めて<br>ペットとの絆を永遠の作品に</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>ご案内</h4>
+                    <ul>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">特定商取引法に基づく表記</a></li>
+                        <li><a href="#">よくあるご質問</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@takis.com</p>
+                        <p><i class="fas fa-phone"></i> 0XX-XXXX-XXXX</p>
+                        <p><i class="fas fa-clock"></i> 平日 10:00-18:00（土日祝日休み）</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>SNS</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 takis リアルペット刺繍. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

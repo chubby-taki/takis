@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - takis リアルペット刺繍オーダー</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>takis</h1>
+                <span>リアルペット刺繍</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="gallery.html">作品ギャラリー</a></li>
+                    <li><a href="services.html">サービス案内</a></li>
+                    <li><a href="pricing.html">料金</a></li>
+                    <li><a href="process.html">オーダーの流れ</a></li>
+                    <li><a href="testimonials.html">お客様の声</a></li>
+                    <li><a href="contact.html" class="active">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="btn-primary">無料相談</a>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                <p>お気軽にご相談ください。あなたの大切なペットとの思い出を美しい作品にいたします。</p>
+            </div>
+        </section>
+
+        <!-- 無料相談フォーム -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <h2>無料相談フォーム</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">電話番号</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pet-type">ペットの種類 <span class="required">*</span></label>
+                            <select id="pet-type" name="pet-type" required>
+                                <option value="">選択してください</option>
+                                <option value="dog">犬</option>
+                                <option value="cat">猫</option>
+                                <option value="rabbit">うさぎ</option>
+                                <option value="bird">鳥</option>
+                                <option value="reptile">爬虫類</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="finish-method">希望仕上げ方法</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="finish-method" value="hoop">
+                                    フープ仕上げ
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="finish-method" value="frame">
+                                    額装仕上げ
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="finish-method" value="undecided">
+                                    まだ決めていない
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-method">希望連絡方法</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="email">
+                                    メール
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="phone">
+                                    電話
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="zoom">
+                                    ZOOM
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="contact-method" value="line">
+                                    LINE
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="photo">写真添付</label>
+                            <input type="file" id="photo" name="photo" accept="image/*" multiple>
+                            <small>最大5MB、JPG/PNG形式</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">相談内容 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="ご質問やご要望をお聞かせください"></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary">無料相談を申し込む</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- その他の連絡方法 -->
+        <section class="contact-methods">
+            <div class="container">
+                <h2>その他のお問い合わせ方法</h2>
+                <div class="contact-grid">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>info@takis.com</p>
+                        <p class="contact-hours">平日 10:00-18:00<br>土日祝休み</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram DM</h3>
+                        <p>@takis_embroidery</p>
+                        <p class="contact-hours">いつでもOK<br>土日もOK</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>お電話</h3>
+                        <p>0XX-XXXX-XXXX</p>
+                        <p class="contact-hours">平日 10:00-17:00<br>土日祝休み</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-line"></i>
+                        </div>
+                        <h3>LINE公式</h3>
+                        <p>@takis-pet</p>
+                        <p class="contact-hours">いつでもOK<br>自動返信あり</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h3>Twitter DM</h3>
+                        <p>@takis_real_pet</p>
+                        <p class="contact-hours">いつでもOK<br>平日のみ返信</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>ZOOM相談</h3>
+                        <p>事前予約制</p>
+                        <p class="contact-hours">平日 10:00-17:00<br>土日も対応可能</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくあるご質問 -->
+        <section class="faq-preview">
+            <div class="container">
+                <h2>よくあるご質問</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>Q: 写真はどのような物が良いですか？</h4>
+                        <p>A: 鮮明で明るく、ペットの表情がよく分かる写真をお送りください。複数枚お送りいただくとより良い作品作りにつながります。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Q: 制作期間はどのくらいですか？</h4>
+                        <p>A: 通常2-4週間程度です。詳細な作品や複数匹の場合は追加で時間をいただく場合があります。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Q: 修正は可能ですか？</h4>
+                        <p>A: 制作途中での確認・修正は可能です。完成後の大幅な変更は別料金となる場合があります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>takis</h3>
+                        <p>リアルペット刺繍</p>
+                        <p class="tagline">一針一針に心を込めて<br>ペットとの絆を永遠の作品に</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>ご案内</h4>
+                    <ul>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">特定商取引法に基づく表記</a></li>
+                        <li><a href="#">よくあるご質問</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@takis.com</p>
+                        <p><i class="fas fa-phone"></i> 0XX-XXXX-XXXX</p>
+                        <p><i class="fas fa-clock"></i> 平日 10:00-18:00（土日祝日休み）</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>SNS</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-line"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 takis リアルペット刺繍. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
