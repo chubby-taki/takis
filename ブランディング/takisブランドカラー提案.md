@@ -44,6 +44,7 @@
 | カラー名 | 色見本 | カラーコード | 使用場面 | イメージ |
 |:---|:---:|:---:|:---|:---|
 | **ダスティローズ** | <div style="width:50px;height:30px;background-color:#D8BFD8;border:1px solid #ccc;"></div> | `#D8BFD8` | 装飾・優しいアクセント | グレイッシュで落ち着いた上品なピンク、愛情、優しさ、繊細なアクセント |
+| **シルクベリー** | <div style="width:50px;height:30px;background-color:#B85C73;border:1px solid #ccc;"></div> | `#B85C73` | 特別感演出・深い愛情表現 | 小豆色に近い深みのある明るいピンク、情熱的な愛情、手仕事への情熱、特別な絆 |
 
 ### **Supporting Colors（サポートカラー）**
 
@@ -78,6 +79,11 @@
     <div style="width:70px;height:70px;background-color:#D8BFD8;border:2px solid #333;border-radius:8px;margin-bottom:8px;"></div>
     <strong style="font-size:12px;">ダスティローズ</strong><br>
     <code style="font-size:10px;">#D8BFD8</code>
+  </div>
+  <div style="text-align: center;">
+    <div style="width:70px;height:70px;background-color:#B85C73;border:2px solid #333;border-radius:8px;margin-bottom:8px;"></div>
+    <strong style="font-size:12px;">シルクベリー</strong><br>
+    <code style="font-size:10px;">#B85C73</code>
   </div>
 </div>
 
@@ -148,6 +154,14 @@
   <strong style="color: #333; margin-left: 10px;">重要告知・価格表示</strong>
 </div>
 
+### **【NEW】パッショネート組み合わせ**
+<div style="display: flex; align-items: center; gap: 10px; padding: 15px; background: linear-gradient(90deg, #F5EFE6 0%, #B85C73 50%, #B08D57 100%); border-radius: 8px; margin: 10px 0;">
+  <span style="background-color: #F5EFE6; width: 30px; height: 30px; border-radius: 50%; border: 2px solid #333;"></span>
+  <span style="background-color: #B85C73; width: 30px; height: 30px; border-radius: 50%; border: 2px solid #333;"></span>
+  <span style="background-color: #B08D57; width: 30px; height: 30px; border-radius: 50%; border: 2px solid #333;"></span>
+  <strong style="color: #333; margin-left: 10px;">情熱的な投稿・深い愛情表現</strong>
+</div>
+
 ---
 
 ## 🎭 カラー使用ガイドライン
@@ -160,6 +174,7 @@
 | **エレガント** | ウォームベージュ | ダスティローズ | アンティークゴールド | 特別な投稿・作品紹介 |
 | **ナチュラル** | ウォームベージュ | セージベージュ | ココアブラウン | 制作過程・温もり重視 |
 | **プレミアム** | アンティークゴールド | ココアブラウン | ウォームベージュ | 高級感・価格表示 |
+| **【NEW】パッショネート** | ウォームベージュ | シルクベリー | アンティークゴールド | 深い愛情・特別な絆・感動エピソード |
 | **【NEW】ソフト** | クリーミーホワイト | ブラッシュピンク | セージベージュ | 優しい印象・繊細な表現 |
 | **【NEW】コントラスト** | クリーミーホワイト | アンティークゴールド | エスプレッソブラウン | 重要告知・価格表示 |
 
@@ -174,7 +189,7 @@
 | **背景** | ウォームベージュ | <div style="width:25px;height:15px;background-color:#F5EFE6;border:1px solid #ccc;display:inline-block;"></div> | クリーミーホワイト | <div style="width:25px;height:15px;background-color:#FEFBF3;border:1px solid #ccc;display:inline-block;"></div> | 統一感のある温かい背景 |
 | **テロップメイン** | ココアブラウン | <div style="width:25px;height:15px;background-color:#795548;border:1px solid #ccc;display:inline-block;"></div> | エスプレッソブラウン | <div style="width:25px;height:15px;background-color:#3C2415;border:1px solid #ccc;display:inline-block;"></div> | 読みやすい落ち着いた文字 |
 | **テロップアクセント** | アンティークゴールド | <div style="width:25px;height:15px;background-color:#B08D57;border:1px solid #ccc;display:inline-block;"></div> | - | - | 重要なキーワード・特別感演出 |
-| **装飾・枠** | ダスティローズ | <div style="width:25px;height:15px;background-color:#D8BFD8;border:1px solid #ccc;display:inline-block;"></div> | ブラッシュピンク | <div style="width:25px;height:15px;background-color:#E8D5D3;border:1px solid #ccc;display:inline-block;"></div> | 優しい囲み・愛情表現 |
+| **装飾・枠** | ダスティローズ | <div style="width:25px;height:15px;background-color:#D8BFD8;border:1px solid #ccc;display:inline-block;"></div> | シルクベリー | <div style="width:25px;height:15px;background-color:#B85C73;border:1px solid #ccc;display:inline-block;"></div> | 優しい囲み・深い愛情表現 |
 | **境界線・分割** | - | - | セージベージュ | <div style="width:25px;height:15px;background-color:#C4B5A0;border:1px solid #ccc;display:inline-block;"></div> | 上品な区切り・調和 |
 
 ### **YouTube サムネイル**
@@ -183,7 +198,7 @@
 |:---|:---:|:---:|:---:|:---:|:---|
 | **背景グラデーション** | ウォームベージュ→アンティークゴールド | <div style="width:25px;height:15px;background:linear-gradient(90deg,#F5EFE6,#B08D57);border:1px solid #ccc;display:inline-block;"></div> | クリーミーホワイト→セージベージュ | <div style="width:25px;height:15px;background:linear-gradient(90deg,#FEFBF3,#C4B5A0);border:1px solid #ccc;display:inline-block;"></div> | 温かく高級感のある印象 |
 | **タイトル文字** | ココアブラウン | <div style="width:25px;height:15px;background-color:#795548;border:1px solid #ccc;display:inline-block;"></div> | エスプレッソブラウン | <div style="width:25px;height:15px;background-color:#3C2415;border:1px solid #ccc;display:inline-block;"></div> | 視認性重視 |
-| **アクセント** | ダスティローズ | <div style="width:25px;height:15px;background-color:#D8BFD8;border:1px solid #ccc;display:inline-block;"></div> | ブラッシュピンク | <div style="width:25px;height:15px;background-color:#E8D5D3;border:1px solid #ccc;display:inline-block;"></div> | 優しい目を引く要素 |
+| **アクセント** | ダスティローズ | <div style="width:25px;height:15px;background-color:#D8BFD8;border:1px solid #ccc;display:inline-block;"></div> | シルクベリー | <div style="width:25px;height:15px;background-color:#B85C73;border:1px solid #ccc;display:inline-block;"></div> | 優しい・深みのある目を引く要素 |
 | **枠・装飾** | アンティークゴールド | <div style="width:25px;height:15px;background-color:#B08D57;border:1px solid #ccc;display:inline-block;"></div> | セージベージュ | <div style="width:25px;height:15px;background-color:#C4B5A0;border:1px solid #ccc;display:inline-block;"></div> | 高級感と温もりの印象 |
 
 ---
@@ -198,6 +213,7 @@
 | | **アンティークゴールド** | 高級感・特別感・永続的価値 | プレミアム感・信頼性 |
 | | **ココアブラウン** | 安定感・信頼・手仕事の温もり | 職人気質・専門性 |
 | | **ダスティローズ** | 愛情・優しさ・繊細さ | 心のつながり・共感性 |
+| | **シルクベリー** | 情熱・深い愛情・特別な絆 | 手仕事への情熱・心の深いつながり |
 | **Support Colors** | **クリーミーホワイト** | 清潔感・軽やかさ・明るさ | 透明性・作品の美しさを引き立てる |
 | | **エスプレッソブラウン** | 力強さ・プロフェッショナル・コントラスト | 重要情報の強調・読みやすさ |
 | | **セージベージュ** | 調和・上品さ・バランス | 洗練された印象・統一感 |
@@ -218,6 +234,7 @@
 #### **アクセント色の選択**
 - **特別感・高級感**: アンティークゴールド（#B08D57）
 - **愛情・優しさ**: ダスティローズ（#D8BFD8）
+- **情熱・深い愛情**: シルクベリー（#B85C73）
 - **繊細・女性的**: ブラッシュピンク（#E8D5D3）
 
 ---
@@ -268,6 +285,7 @@
 | **お客様の声・感動エピソード** | ソフト | クリーミーホワイト + ブラッシュピンク + セージベージュ |
 | **価格表示・サービス案内** | コントラスト | クリーミーホワイト + エスプレッソブラウン + アンティークゴールド |
 | **季節の挨拶・日常会話** | ナチュラル | ウォームベージュ + セージベージュ + ダスティローズ |
+| **特別なお客様エピソード** | パッショネート | ウォームベージュ + シルクベリー + アンティークゴールド |
 
 ### **メディア別推奨カラー数**
 - **Instagram投稿**: 3-4色まで（見やすさ重視）
@@ -277,5 +295,11 @@
 - **印刷物**: 全8色活用可能（ブランド表現の幅を最大化）
 
 8色の豊富なパレットで、様々なシーンや気分に合わせた表現が可能になりました！✨
+
+**【NEW】シルクベリーの活用で、より深い愛情と情熱的な表現が可能に！**
+- 特別なお客様とのエピソード
+- 手仕事への情熱を表現
+- 深い絆や感動の瞬間
+- 記念日や特別な日の投稿
 
 温もりと信頼のtakisブランドカラーで、より深いファンとのつながりを築いていきましょう！✨ 

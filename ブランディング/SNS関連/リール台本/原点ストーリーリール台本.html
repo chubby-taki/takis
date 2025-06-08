@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>原点ストーリーリール台本</title>
+  <style>
+    /* takisブランドカラー */
+    :root {
+      --creamy-white: #FEFBF3;
+      --warm-beige: #F5EFE6;
+      --sage-beige: #C4B5A0;
+      --cocoa-brown: #795548;
+      --espresso-brown: #3C2415;
+      --antique-gold: #B08D57;
+      --dusty-rose: #D8BFD8;
+      --blush-pink: #E8D5D3;
+    }
+
+    /* 基本設定 */
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'YuGothic', 'Meiryo', sans-serif;
+      line-height: 1.8;
+      color: var(--espresso-brown);
+      background: linear-gradient(135deg, var(--creamy-white) 0%, var(--warm-beige) 100%);
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    /* コンテナ */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 0;
+      box-shadow: 0 10px 30px rgba(60, 36, 21, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    /* 見出し */
+    h1 {
+      color: var(--espresso-brown);
+      font-size: 2.8em;
+      text-align: center;
+      margin: 0 0 40px 0;
+      padding: 30px 20px;
+      background: linear-gradient(135deg, var(--creamy-white) 0%, var(--warm-beige) 50%, var(--blush-pink) 100%);
+      border-radius: 0;
+      position: relative;
+      text-shadow: 0 2px 4px rgba(60, 36, 21, 0.1);
+      box-shadow: 
+        0 8px 25px rgba(60, 36, 21, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    }
+
+    h1::after {
+      content: '🧵';
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 1.2em;
+      opacity: 0.7;
+    }
+
+    h2 {
+      color: var(--cocoa-brown);
+      font-size: 1.9em;
+      margin: 35px 0 25px 0;
+      padding: 18px 25px;
+      background: linear-gradient(135deg, var(--warm-beige) 0%, var(--creamy-white) 100%);
+      border-radius: 0;
+      position: relative;
+      box-shadow: 0 4px 15px rgba(121, 85, 72, 0.1);
+      overflow: hidden;
+    }
+
+    h2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, var(--dusty-rose) 50%, var(--antique-gold) 100%);
+      opacity: 0.3;
+      border-radius: 0;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 8px;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: var(--antique-gold);
+      border-radius: 0;
+      box-shadow: 
+        0 12px 0 var(--antique-gold),
+        0 -12px 0 var(--antique-gold);
+    }
+
+    h3 {
+      color: var(--espresso-brown);
+      font-size: 1.5em;
+      margin: 30px 0 20px 0;
+      padding: 15px 20px 15px 45px;
+      background: linear-gradient(135deg, var(--creamy-white) 0%, var(--warm-beige) 100%);
+      border-radius: 0;
+      position: relative;
+      box-shadow: 0 3px 10px rgba(196, 181, 160, 0.2);
+    }
+
+    h3::before {
+      content: '■';
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--antique-gold);
+      font-size: 1.2em;
+      text-shadow: 0 1px 2px rgba(176, 141, 87, 0.3);
+    }
+
+    /* セクション区切り */
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(90deg, var(--sage-beige), var(--antique-gold), var(--sage-beige));
+      margin: 40px 0;
+      border-radius: 2px;
+    }
+
+    /* テーブル */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: var(--creamy-white);
+      border-radius: 0;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(121, 85, 72, 0.1);
+    }
+
+    th {
+      background: var(--cocoa-brown);
+      color: var(--creamy-white);
+      padding: 15px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    td {
+      padding: 12px 15px;
+      border-bottom: 1px solid var(--sage-beige);
+    }
+
+    tr:nth-child(even) {
+      background: var(--warm-beige);
+    }
+
+    tr:hover {
+      background: var(--dusty-rose);
+      transition: background-color 0.3s ease;
+    }
+
+    /* リスト */
+    ul, ol {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    li {
+      margin: 8px 0;
+      padding: 5px 0;
+    }
+
+    li strong {
+      color: var(--cocoa-brown);
+    }
+
+    /* コードブロック */
+    pre {
+      background: var(--espresso-brown);
+      color: var(--creamy-white);
+      padding: 20px;
+      border-radius: 0;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-left: 4px solid var(--antique-gold);
+    }
+
+    code {
+      background: var(--warm-beige);
+      color: var(--espresso-brown);
+      padding: 2px 6px;
+      border-radius: 0;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    }
+
+    /* カラーサンプル */
+    .color-sample {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+      margin-left: 10px;
+      vertical-align: middle;
+      border: 2px solid var(--espresso-brown);
+    }
+
+    /* 特別なセクション */
+    .section-shooting {
+      background: linear-gradient(135deg, var(--creamy-white), var(--warm-beige));
+      border: 2px solid var(--sage-beige);
+      border-radius: 0;
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .section-shooting h1 {
+      background: linear-gradient(135deg, var(--creamy-white) 0%, var(--warm-beige) 100%);
+      border-left: 6px solid var(--sage-beige);
+    }
+
+    .section-shooting h1::after {
+      content: '📹';
+    }
+
+    .section-editing {
+      background: linear-gradient(135deg, var(--warm-beige), var(--dusty-rose));
+      border: 2px solid var(--antique-gold);
+      border-radius: 0;
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .section-editing h1 {
+      background: linear-gradient(135deg, var(--warm-beige) 0%, var(--dusty-rose) 100%);
+      border-left: 6px solid var(--antique-gold);
+    }
+
+    .section-editing h1::after {
+      content: '✂️';
+    }
+
+    .section-other {
+      background: linear-gradient(135deg, var(--dusty-rose), var(--blush-pink));
+      border: 2px solid var(--cocoa-brown);
+      border-radius: 0;
+      padding: 25px;
+      margin: 30px 0;
+    }
+
+    .section-other h1 {
+      background: linear-gradient(135deg, var(--dusty-rose) 0%, var(--blush-pink) 100%);
+      border-left: 6px solid var(--cocoa-brown);
+    }
+
+    .section-other h1::after {
+      content: '📱';
+    }
+
+    /* 印刷用スタイル */
+    @media print {
+      body {
+        background: white;
+      }
+      .container {
+        box-shadow: none;
+        padding: 20px;
+      }
+    }
+
+    /* レスポンシブ */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+        margin: 10px;
+      }
+      
+      h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+        font-size: 1.5em;
+      }
+      
+      table {
+        font-size: 0.9em;
+      }
+    }
+
+    /* アニメーション */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      animation: fadeIn 0.8s ease-out;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="container">
+<h1 id="原点ストーリーリール台本">原点ストーリーリール台本</h1>
+<h2 id="なぜ私は刺繍に人生を賭けたのか">💡 「なぜ私は刺繍に人生を賭けたのか」</h2>
+<h3 id="リール概要">📱 リール概要</h3>
+<ul>
+<li><strong>テーマ：</strong> takiの原点ストーリー - 刺繍への深い愛と人生を賭ける理由</li>
+<li><strong>全体の長さ：</strong> 20秒～30秒</li>
+<li><strong>BGM：</strong> 優しくノスタルジックなインストゥルメンタル曲（著作権フリー音源）</li>
+<li><strong>狙い：</strong> ファン化促進、共感獲得、ブランドストーリー訴求</li>
+<li><strong>カラーテーマ：</strong> takisブランドカラー（温もりと優しさの表現）</li>
+</ul>
+<hr />
+<div class="section-shooting">
+<h1 id="撮影時に必要な情報">📹 撮影時に必要な情報</h1>
+<h2 id="撮影シーン別詳細">🎬 撮影シーン別詳細</h2>
+
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left; width: 15%;">時間</th>
+<th style="text-align: left; width: 20%;">シーン</th>
+<th style="text-align: left; width: 35%;">映像内容</th>
+<th style="text-align: left; width: 30%;">撮影設定</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>0-5秒</strong></td>
+<td style="text-align: left;"><strong>オープニング</strong></td>
+<td style="text-align: left;">
+  • 美しい刺繍作品のアップ（糸の質感・立体感強調）<br>
+  • takiの手元での刺繍作業<br>
+  • 子供の頃の手芸作品や古い針箱のインサート
+</td>
+<td style="text-align: left;">
+  <strong>背景：</strong> クリーミーホワイト <span class="color-sample" style="background-color: #FEFBF3;"></span><br>
+  <strong>照明：</strong> 自然光 + 明るい環境<br>
+  <strong>アングル：</strong> 手元のクローズアップ、作品の美しさを強調
+</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>5-15秒</strong></td>
+<td style="text-align: left;"><strong>幼少期の原点</strong></td>
+<td style="text-align: left;">
+  • 刺繍に没頭するtakiの現在の姿（軽い早送り用素材）<br>
+  • 色とりどりの糸や布、手芸道具のレイアウト<br>
+  • 幼い頃の写真や子供の夢中な様子
+</td>
+<td style="text-align: left;">
+  <strong>フィルター：</strong> ウォームベージュ系の柔らかな色調<br>
+  <strong>小物配置：</strong> ウォームベージュ <span class="color-sample" style="background-color: #F5EFE6;"></span> 系の布や背景<br>
+  <strong>表情：</strong> 自然で穏やかな集中している様子
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>15-25秒</strong></td>
+<td style="text-align: left;"><strong>刺繍への愛</strong></td>
+<td style="text-align: left;">
+  • 穏やかな表情で刺繍するtaki（窓辺やお気に入り空間）<br>
+  • 美しい完成作品のスライドショー用素材<br>
+  • お気に入り作品を持つ優しい笑顔
+</td>
+<td style="text-align: left;">
+  <strong>照明：</strong> 自然光 + ウォームトーン調整<br>
+  <strong>背景・台座：</strong> クリーミーホワイト <span class="color-sample" style="background-color: #FEFBF3;"></span>、ウォームベージュ <span class="color-sample" style="background-color: #F5EFE6;"></span><br>
+  <strong>表情：</strong> 愛情が伝わる穏やかな笑顔
+</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>25-30秒</strong></td>
+<td style="text-align: left;"><strong>エンディング</strong></td>
+<td style="text-align: left;">
+  • takisロゴまたは素敵な刺繍作品のアップ<br>
+  • フェードアウト用素材
+</td>
+<td style="text-align: left;">
+  <strong>背景：</strong> ウォームベージュ <span class="color-sample" style="background-color: #F5EFE6;"></span> グラデーション効果用<br>
+  <strong>雰囲気：</strong> 上品で余韻のある仕上がり
+</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="音声録音設定">🎤 音声録音設定</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>録音環境</strong></td>
+<td style="text-align: left;">静かな場所で、マイクを口から適度な距離に</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>声のトーン</strong></td>
+<td style="text-align: left;">優しく温かく、「好き」という気持ちが伝わるように</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>ナレーション内容</strong></td>
+<td style="text-align: left;">下記セクション別ナレーション参照</td>
+</tr>
+</tbody>
+</table>
+<h3 id="セクション別ナレーション"><strong>セクション別ナレーション</strong></h3>
+<ol type="1">
+<li><strong>オープニング：</strong> 「💡 なぜ私は刺繍に人生を賭けたのか…小さな女の子の『好き』が導いた、運命の物語です🧵」</li>
+<li><strong>幼少期の原点：</strong> 「小さい頃から手芸が大好きで、時間を忘れて没頭する日々でした…あなたにも、そんな風に時間を忘れて熱中できる『好き』なことはありますか？」</li>
+<li><strong>刺繍への愛：</strong> 「20年前に出会った刺繍の世界…仕事の合間にチクチク針を動かす時間が、本当の自分に戻れる、愛おしい瞬間でした💕」</li>
+</ol>
+</div>
+
+<hr />
+
+<div class="section-editing">
+<h1 id="編集時に必要な情報">✂️ 編集時に必要な情報</h1>
+<h2 id="カラーパレット">🎨 カラーパレット</h2>
+<h3 id="基本カラー"><strong>基本カラー</strong></h3>
+<ul>
+<li><strong>クリーミーホワイト：</strong> #FEFBF3 <span class="color-sample" style="background-color: #FEFBF3;"></span></li>
+<li><strong>ウォームベージュ：</strong> #F5EFE6 <span class="color-sample" style="background-color: #F5EFE6;"></span></li>
+<li><strong>セージベージュ：</strong> #C4B5A0 <span class="color-sample" style="background-color: #C4B5A0;"></span></li>
+<li><strong>ココアブラウン：</strong> #795548 <span class="color-sample" style="background-color: #795548;"></span></li>
+<li><strong>エスプレッソブラウン：</strong> #3C2415 <span class="color-sample" style="background-color: #3C2415;"></span></li>
+<li><strong>アンティークゴールド：</strong> #B08D57 <span class="color-sample" style="background-color: #B08D57;"></span></li>
+<li><strong>ダスティローズ：</strong> #D8BFD8 <span class="color-sample" style="background-color: #D8BFD8;"></span></li>
+<li><strong>ブラッシュピンク：</strong> #E8D5D3 <span class="color-sample" style="background-color: #E8D5D3;"></span></li>
+</ul>
+<h2 id="テロップデザイン仕様">🎨 テロップ・デザイン仕様</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left; width: 15%;">時間</th>
+<th style="text-align: left; width: 25%;">テキスト</th>
+<th style="text-align: left; width: 15%;">文字色</th>
+<th style="text-align: left; width: 15%;">背景</th>
+<th style="text-align: left; width: 20%;">アクセント・装飾</th>
+<th style="text-align: left; width: 10%;">フォント</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>0-5秒</strong><br>オープニング</td>
+<td style="text-align: left;">「💡 なぜ私は刺繍に人生を賭けたのか」</td>
+<td style="text-align: left;">ココアブラウン <span class="color-sample" style="background-color: #795548;"></span></td>
+<td style="text-align: left;">ウォームベージュ <span class="color-sample" style="background-color: #F5EFE6;"></span> 半透明</td>
+<td style="text-align: left;">アンティークゴールド <span class="color-sample" style="background-color: #B08D57;"></span></td>
+<td style="text-align: left;">手書き風フォント</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>5-15秒</strong><br>幼少期の原点</td>
+<td style="text-align: left;">「時間を忘れて熱中できる『好き』なことはありますか？」</td>
+<td style="text-align: left;">エスプレッソブラウン <span class="color-sample" style="background-color: #3C2415;"></span></td>
+<td style="text-align: left;">ダスティローズ <span class="color-sample" style="background-color: #D8BFD8;"></span> 半透明</td>
+<td style="text-align: left;">セージベージュ <span class="color-sample" style="background-color: #C4B5A0;"></span> のフレーム</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>15-25秒</strong><br>刺繍への愛</td>
+<td style="text-align: left;">「本当の自分に戻れる、愛おしい瞬間💕」</td>
+<td style="text-align: left;">ココアブラウン <span class="color-sample" style="background-color: #795548;"></span></td>
+<td style="text-align: left;">クリーミーホワイト <span class="color-sample" style="background-color: #FEFBF3;"></span></td>
+<td style="text-align: left;">ハート装飾：ブラッシュピンク <span class="color-sample" style="background-color: #E8D5D3;"></span><br>ハッシュタグ：アンティークゴールド <span class="color-sample" style="background-color: #B08D57;"></span></td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>25-30秒</strong><br>エンディング</td>
+<td style="text-align: left;">「続きはキャプションで✨」<br>「プロフィールのリンクもチェック👆」</td>
+<td style="text-align: left;">エスプレッソブラウン <span class="color-sample" style="background-color: #3C2415;"></span></td>
+<td style="text-align: left;">セージベージュ <span class="color-sample" style="background-color: #C4B5A0;"></span> 半透明</td>
+<td style="text-align: left;">アンティークゴールド <span class="color-sample" style="background-color: #B08D57;"></span></td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="編集設定">🎞️ 編集設定</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">詳細</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>推奨編集アプリ</strong></td>
+<td style="text-align: left;">CapCut、VLLO（ブロ）などのスマホアプリ推奨</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>BGM</strong></td>
+<td style="text-align: left;">優しくノスタルジックなインストゥルメンタル曲（著作権フリー音源）</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>トランジション</strong></td>
+<td style="text-align: left;">スムーズな切り替え効果、フェード色：ウォームベージュ <span class="color-sample" style="background-color: #F5EFE6;"></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>テロップ配置</strong></td>
+<td style="text-align: left;">ナレーションの全文ではなく、キーワードを効果的に表示</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>背景透明度</strong></td>
+<td style="text-align: left;">メイン背景：70%透明度、アクセント背景：60%透明度</td>
+</tr>
+</tbody>
+</table>
+<h2 id="カラーコンビネーション指針">🎨 カラーコンビネーション指針</h2>
+<h3 id="基本パターン-メイン組み合わせ"><strong>基本パターン：</strong> メイン組み合わせ</h3>
+<ul>
+<li><strong>背景：</strong> ウォームベージュ <span class="color-sample" style="background-color: #F5EFE6;"></span></li>
+<li><strong>メインテキスト：</strong> ココアブラウン <span class="color-sample" style="background-color: #795548;"></span></li>
+<li><strong>アクセント：</strong> アンティークゴールド <span class="color-sample" style="background-color: #B08D57;"></span></li>
+</ul>
+<h3 id="感情表現パターン-エレガント組み合わせ"><strong>感情表現パターン：</strong> エレガント組み合わせ</h3>
+<ul>
+<li><strong>背景：</strong> クリーミーホワイト <span class="color-sample" style="background-color: #FEFBF3;"></span></li>
+<li><strong>メインテキスト：</strong> ココアブラウン <span class="color-sample" style="background-color: #795548;"></span></li>
+<li><strong>愛情表現：</strong> ダスティローズ <span class="color-sample" style="background-color: #D8BFD8;"></span></li>
+<li><strong>特別感：</strong> アンティークゴールド <span class="color-sample" style="background-color: #B08D57;"></span></li>
+</ul>
+<h3 id="強調パターン-コントラスト組み合わせ"><strong>強調パターン：</strong> コントラスト組み合わせ</h3>
+<ul>
+<li><strong>背景：</strong> クリーミーホワイト <span class="color-sample" style="background-color: #FEFBF3;"></span></li>
+<li><strong>重要テキスト：</strong> エスプレッソブラウン <span class="color-sample" style="background-color: #3C2415;"></span></li>
+<li><strong>アクセント：</strong> アンティークゴールド <span class="color-sample" style="background-color: #B08D57;"></span></li>
+</ul>
+</div>
+
+<hr />
+
+<div class="section-other">
+<h1 id="その他投稿マーケティング">📱 その他（投稿・マーケティング）</h1>
+<h2 id="投稿用キャプション">📝 投稿用キャプション</h2>
+<pre><code>💡 なぜ私は刺繍に人生を賭けたのか
+小さな女の子の「好き」が導いた運命🧵
+
+小さい頃から手芸が大好きで
+時間を忘れて没頭する日々...
+
+あなたにも、そんな風に
+時間を忘れて熱中できる
+「好き」なことはありますか？
+
+20年前に出会った刺繍の世界
+仕事の合間にチクチク針を動かす時間が
+本当の自分に戻れる愛おしい瞬間でした💕
+
+あなたの「好き」もぜひコメントで教えてくださいね😊
+
+#takis #刺繍への愛 #原点 #手芸愛好家 #リール #ストーリー</code></pre>
+<h2 id="期待される効果kpi">📊 期待される効果・KPI</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">カテゴリー</th>
+<th style="text-align: left;">効果</th>
+<th style="text-align: left;">測定指標</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>エンゲージメント</strong></td>
+<td style="text-align: left;">・コメントでの「好き」なことシェア<br>・共感によるいいね・保存増加<br>・プロフィール訪問率向上</td>
+<td style="text-align: left;">いいね数、コメント数、保存数、プロフィールクリック率</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>ファン化促進</strong></td>
+<td style="text-align: left;">・takiの人柄や価値観への共感<br>・ブランドストーリーの理解深化<br>・長期的な関係性構築</td>
+<td style="text-align: left;">フォロワー増加率、リピート視聴率、DM数</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>認知拡大</strong></td>
+<td style="text-align: left;">・リールの拡散性による新規フォロワー獲得<br>・takisブランドの認知度アップ<br>・同じ価値観を持つターゲット層へのリーチ</td>
+<td style="text-align: left;">リーチ数、インプレッション数、シェア数、新規フォロワー数</td>
+</tr>
+</tbody>
+</table>
+<h2 id="投稿戦略">🎯 投稿戦略</h2>
+<h3 id="投稿タイミング"><strong>投稿タイミング</strong></h3>
+<ul>
+<li><strong>推奨時間帯：</strong> 平日 19:00-21:00 / 土日 10:00-12:00, 15:00-17:00</li>
+<li><strong>投稿頻度：</strong> 週1-2回のクオリティ重視</li>
+</ul>
+<h3 id="フォローアップ施策"><strong>フォローアップ施策</strong></h3>
+<ul>
+<li><strong>コメント返信：</strong> 24時間以内の丁寧な返信</li>
+<li><strong>ストーリーズ連携：</strong> リール投稿後にストーリーズでより詳しい話を展開</li>
+<li><strong>次回予告：</strong> 「次回は制作プロセスをお見せします」等の予告でエンゲージメント継続</li>
+</ul>
+</div>
+
+<hr />
+<h2 id="制作時の重要ポイント">🎨 制作時の重要ポイント</h2>
+<h3 id="色の心理効果を活用"><strong>色の心理効果を活用</strong></h3>
+<ul>
+<li><strong>ウォームベージュ</strong> → 安心感・親しみやすさ</li>
+<li><strong>ココアブラウン</strong> → 信頼感・温もり</li>
+<li><strong>アンティークゴールド</strong> → 特別感・価値感</li>
+<li><strong>ダスティローズ</strong> → 愛情・優しさ</li>
+</ul>
+<h3 id="視認性の確保"><strong>視認性の確保</strong></h3>
+<ul>
+<li>背景と文字のコントラストを十分に確保</li>
+<li>重要な情報はエスプレッソブラウンで強調</li>
+<li>半透明背景で文字の読みやすさを向上</li>
+</ul>
+<h3 id="ブランド統一感"><strong>ブランド統一感</strong></h3>
+<ul>
+<li>全ての要素でtakisブランドカラーを使用</li>
+<li>他の投稿との一貫性を保つ</li>
+<li>見る人に「takisらしさ」を印象付ける</li>
+</ul>
+<hr />
+<p><a href="../SNS投稿戦略統合版.md">← SNS投稿戦略統合版に戻る</a></p>
+</div>
+</body>
+</html>
